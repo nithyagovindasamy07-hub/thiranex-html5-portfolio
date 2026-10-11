@@ -1,0 +1,208 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  color: #243047;
+  background: #f7f9fc;
+}
+
+a {
+  color: #1557b0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 12px;
+  background: white;
+  padding: 12px;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 18px 8%;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-list a:hover,
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 90px 8%;
+  text-align: center;
+  background: #eaf2ff;
+}
+
+.eyebrow {
+  color: #1557b0;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+}
+
+.intro {
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 22px;
+  background: #1557b0;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #0b3b80;
+}
+
+.text-link {
+  display: inline-block;
+  margin: 10px;
+}
+
+.content-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 48px 6%;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.info-card {
+  padding: 24px;
+  background: white;
+  border: 1px solid #dce5f0;
+  border-radius: 12px;
+}
+
+.info-card h3 {
+  margin-top: 0;
+}
+
+.page-content {
+  max-width: 850px;
+  min-height: 60vh;
+  margin: auto;
+  padding: 48px 6%;
+}
+
+.contact-form {
+  display: grid;
+  gap: 10px;
+  max-width: 600px;
+}
+
+.contact-form label {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #8492a6;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.contact-form button {
+  width: fit-content;
+  margin-top: 16px;
+  padding: 12px 22px;
+  border: 0;
+  border-radius: 6px;
+  background: #1557b0;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.site-footer {
+  padding: 24px;
+  text-align: center;
+  background: #eaf2ff;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 16px 5%;
+  }
+
+  .nav-list {
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 60px 5%;
+  }
+
+  .content-section,
+  .page-content {
+    padding: 32px 5%;
+  }
+}
+
